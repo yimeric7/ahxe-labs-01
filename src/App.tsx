@@ -4,8 +4,9 @@ import "./App.css"
 
 framer.showUI({
     position: "top right",
-    width: 240,
-    height: 95,
+    width: 100,
+    height: 150,
+    resizable: true,
 })
 
 function useSelection() {
@@ -31,16 +32,27 @@ export function App() {
 
     return (
         <main>
-            <p>
-                Welcome! Check out the{" "}
-                <a href="https://framer.com/developers/plugins/introduction" target="_blank">
-                    Docs
-                </a>{" "}
-                to start. You have {selection.length} {layer} selected.
-            </p>
-            <button className="framer-button-primary" onClick={handleAddSvg}>
-                Insert Logo
-            </button>
+            <div className="table-container">
+                <div className="table-content">
+                    <p>8 x 1 = 8</p>
+                    <p>8 x 2 = 16</p>
+                    <p>8 x 3 = 24</p>
+                    <p>8 x 4 = 32</p>
+                    <p>8 x 5 = 40</p>
+                    <p>8 x 6 = 48</p>
+                    <p>8 x 7 = 56</p>
+                    <p>8 x 8 = 64</p>
+                    <p>8 x 9 = 72</p>
+                    <p>8 x 10 = 80</p>
+                    <p>8 x 11 = 88</p>
+                    <p>8 x 12 = 96</p>
+                    <p>8 x 13 = 104</p>
+                    <p>8 x 14 = 112</p>
+                    <p>8 x 15 = 120</p>
+                    <p>8 x 16 = 128</p>
+                    <div className="table-header">AHXE Labs</div>
+                </div>
+            </div>
         </main>
     )
 }

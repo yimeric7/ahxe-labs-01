@@ -1,10 +1,67 @@
-/* Your Plugin CSS */
-
 main {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 0 15px 15px 15px;
-    height: 100%;
-    gap: 15px;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to top */
+    height: 100vh;
+    overflow-y: scroll; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    scrollbar-width: none;
+    font-family: "PolySans Median, sans-serif", 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars on the body */
+}
+
+.table-container {
+    width: 100%;
+    border-radius: 8px;
+    margin: 0; /* Remove unwanted margins */
+    border: none; /* Remove table border */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Optional: add slight shadow */
+}
+
+.table-content {
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+.table-content p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 220px) {
+    .table-header {
+        font-size: 34px;
+    }
+    .table-content p {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+}
+
+@font-face {
+    font-family: 'PolySans Median';
+    src: url('./PolySans-Median.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.table-header {
+    background-color: #fafafa;
+    color: black;
+    text-align: center;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 16px;
+    font-family: "PolySans Median, sans-serif", 
 }
